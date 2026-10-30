@@ -1,4 +1,4 @@
-import { Role, DocType } from "../config/global.config.js";
+import type { Role, DocType } from "../config/global.config.ts";
 
 export interface IUser {
     name: string;

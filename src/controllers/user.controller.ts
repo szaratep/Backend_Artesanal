@@ -1,8 +1,8 @@
-import {Request, Response} from "express"
+import type {Request, Response} from "express"
 import mongoose from "mongoose";
-import { CreateUserInput } from "../interface/user.interface.js"
-import { encryptedPassword } from "../helpers/bcrypt.helper.js";
-import { dbCreateUser } from "../services/user.service.js";
+import type { CreateUserInput } from "../interface/user.interface.ts"
+import { encryptedPassword } from "../helpers/bcrypt.helper.ts";
+import { dbCreateUser } from "../services/user.service.ts";
 
 const createUser = async (req: Request<{}, {}, CreateUserInput>, res: Response): Promise<void> => {
     try {

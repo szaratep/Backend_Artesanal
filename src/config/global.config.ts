@@ -5,10 +5,10 @@ export const ROLES = {
 } as const;
 
 export const DOC_TYPE = {
-    CC: "Cedula de ciudadania",
-    CE: "Cedula de extranjeria",
-    NIT: "Numero de identificacion tributaria",
-    PP: "Pasaporte",
+    CC: "C.C.",
+    CE: "C.E.",
+    NIT: "N.I.T.",
+    PP: "P.P.",
 } as const;
 
 // Tipos derivados de los valores

@@ -1,6 +1,6 @@
-import { HydratedDocument } from "mongoose";
-import { CreateUserInput, IUser } from "../interface/user.interface.js";
-import UserModel from "../models/user.model.js";
+import type { HydratedDocument } from "mongoose";
+import type { CreateUserInput, IUser } from "../interface/user.interface.ts";
+import UserModel from "../models/user.model.ts";
 
 const dbCreateUser = async (newUser: CreateUserInput): Promise<HydratedDocument<IUser>> => {
     return await UserModel.create(newUser);

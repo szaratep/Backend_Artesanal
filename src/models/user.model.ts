@@ -1,6 +1,6 @@
 import {Schema, model} from "mongoose"
-import { ALLOWED_DOCUMENTS, ALLOWED_ROLES, DOC_TYPE, ROLES } from "../config/global.config.js"
-import { IUser } from "../interface/user.interface.js";
+import { ALLOWED_DOCUMENTS, ALLOWED_ROLES, DOC_TYPE, ROLES } from "../config/global.config.ts"
+import type { IUser } from "../interface/user.interface.ts";
 
 const UserSchema = new Schema<IUser>({
     name: {
